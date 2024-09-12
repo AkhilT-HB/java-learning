@@ -24,7 +24,7 @@ public class TestClass {
 //		System.out.println(a1.equals(a2));
 //		System.out.println(a1.equals(a2));
 		
-//		System.out.println(str1 == str2);
+///		System.out.println(str1 == str2);
 //		System.out.println(str1.equals(str2));
 //		
 //		System.out.println(str3 == str4);
@@ -41,7 +41,7 @@ public class TestClass {
 		System.out.println(e2.hashCode());
 		
 		
-		ArrayList<Integer> list = new ArrayList<>();
+		//ArrayList<Integer> list = new ArrayList<>();
 		
 	}
 
