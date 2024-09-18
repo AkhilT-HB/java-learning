@@ -12,7 +12,7 @@ public class StreamPracticeQuesCodeWithVarshaPart2 {
         //1. Given a sentence, find and print the frequency of each word.
         String sentence = "Java is a programming language. Java is versatile.";
         
-        //Map<String, Long> wordFrequency = Arrays.stream(sentence.split("\\s+")).collect(Collectors.groupingBy(String::toLowerCase,Collectors.counting()));
+        Map<String, Long> wordFrequency = Arrays.stream(sentence.split("\\s+")).collect(Collectors.groupingBy(String::toLowerCase,Collectors.counting()));
         System.out.println(wordFrequency);
         
         //2. Given a list of integers, find out all the numbers starting with 1.
@@ -25,7 +25,7 @@ public class StreamPracticeQuesCodeWithVarshaPart2 {
         //3. Given a list of names, group them by their first letter, and then count the number of names in each group. 
         String[] names = {"Alice", "Bob", "Charlie", "Amy", "Bill", "Anna"};
         
-        Map<String, Long> output = Arrays.stream(names).collect(Collectors.groupingBy(String::substring(0,1), Collectors.counting()));
+        //Map<String, Long> output = Arrays.stream(names).collect(Collectors.groupingBy(String::substring(0,1), Collectors.counting()));
 	}
 
 }
