@@ -14,16 +14,12 @@ public class StringRotationsOfEachOther {
         	return false;
         }
         
-        StringBuffer str1 = new StringBuffer(s1);
-        StringBuffer str2 = new StringBuffer(s2);
-        
-        
-        
-        
-        if(s1.contains(s2)) {
-        	return true;
+        String concat=s1+s1;
+        int len=0;
+        for(int i=0;i<concat.length();i++){
+            if(len==s2.length()) break;
+            if(concat.charAt(i)==s2.charAt(len)) len++;
         }
-        
-        return true;
+        return len==s2.length();
     }
 }
