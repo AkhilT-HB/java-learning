@@ -29,8 +29,8 @@ public class StreamPracticeA {
 		// list.stream().map( m -> m+" ").filter( e -> e.startsWith("1")).forEach(System.out::println);
 		
 		// 3.
-		//Set<Integer> set = new HashSet();
-		//list.stream().sorted().filter( n -> !set.add(n)).forEach(System.out::println);
+//		Set<Integer> set = new HashSet();
+//		list.stream().sorted().filter( n -> !set.add(n)).forEach(System.out::println);
 		
 		// 4.
 		//list.stream().findFirst().ifPresent(System.out::println);
@@ -52,6 +52,8 @@ public class StreamPracticeA {
 //		List<Object> ch = Arrays.asList(strArr);
 //		
 //		Optional<Object> value = ch.stream().distinct().findFirst();
+		
+		
 		
 		String str = "welcome";
 		
