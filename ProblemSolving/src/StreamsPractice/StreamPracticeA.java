@@ -20,7 +20,7 @@ public class StreamPracticeA {
 	public static void main(String[] args) {
 		List<Integer> list = Arrays.asList(10,15,8,49,25,98,98,32,15);
 		
-		
+		 
 		
 		// 1.
 		// list.stream().filter(e -> e%2 == 0).sorted().forEach(System.out::println);

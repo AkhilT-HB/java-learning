@@ -53,7 +53,7 @@ public class StreamPracticeQuesCodeWithVarsha {
        //Write a program to find the average of a List of floating-point numbers using streams.
         List<Double> numsFloat = Arrays.asList(1.3, 2.4, 3.1, 4.2, 5.4);
         double avg = numsFloat.stream().mapToDouble(Double::doubleValue).average().getAsDouble(); //mapToDouble is used to convert the wrapper Double to primitive double value
-        System.out.println(avg);
+        System.out.println("The average is: "+avg);
         
        //Given a List of strings, write a program to concatenate all the strings using streams.
         //List<String> fruits = Arrays.asList("apple", "banana", "cherry", "coconut", "apple");
@@ -107,7 +107,7 @@ public class StreamPracticeQuesCodeWithVarsha {
         System.out.println("Square of nums elements: "+squares);
         
         
-        //Find the average length of strings in a list using streams.
+        //Find the length of strings in a list using streams.
         List<Integer> lengths = fruits.stream().map(fruit -> fruit.length()).collect(Collectors.toList());
         System.out.println("length of each element in fruits: "+lengths);
         
