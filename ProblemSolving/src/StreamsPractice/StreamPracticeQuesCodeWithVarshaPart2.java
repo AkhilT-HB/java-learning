@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -98,6 +100,8 @@ public class StreamPracticeQuesCodeWithVarshaPart2 {
         List<String> fruits = Arrays.asList("Mango","pear" ,"Apple", "Banana", "Pineapple", "Kiwi");
         
         fruits.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
+        
+        
 	}
 
 }
