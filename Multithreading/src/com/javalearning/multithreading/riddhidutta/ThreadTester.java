@@ -1,5 +1,7 @@
 package com.javalearning.multithreading.riddhidutta;
 
+import java.util.Comparator;
+
 public class ThreadTester {
 
 	public static void main(String[] args) {
@@ -17,6 +19,20 @@ public class ThreadTester {
 		System.out.println("main is exiting");
 		
 		Stack stack = new Stack(5);
+		
+		new Thread(()-> {
+			int counter=0;
+			while(++ counter < 10)
+				System.out.println("Pushed"+ stack.push(100));
+		},"Pusher").start();
+		
+		new Thread(()->{
+			int counter = 0;
+			while(++ counter < 10) 
+				System.out.println("Popped"+stack.pop());
+		},"Popper").start();
 	}
+	
+	
 
 }
