@@ -1,4 +1,4 @@
-package Arrays;
+package ArraysPractice;
 
 public class SingleDimensionArray {
 	
