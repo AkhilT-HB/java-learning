@@ -1,5 +1,7 @@
 package ArraysPractice;
 
+import java.lang.reflect.Array;
+
 /*
  * Write Java function called findMissingNumberInArray that takes an integer array containing n-1 unique elements from a range of 1 to n, with one missing number, and returns the missing number.
 
@@ -18,9 +20,13 @@ public class ExerciseMissingElement {
 		// TODO Auto-generated method stub
 		int[] myArray = {1,2,3,4,6};
 		
-		int result = findMissingNumberInArray(myArray);
+		int firstResult = findMissingNumberInArray(myArray);
 		
-		System.out.println(result);
+		System.out.println(firstResult);
+		
+		int secondResult = anotherApproachFindMissingNumberInArray(myArray);
+		
+		System.out.println(secondResult);
 	}
 	
 	static int findMissingNumberInArray(int[] arr) {
@@ -35,6 +41,19 @@ public class ExerciseMissingElement {
 	    }
 	    
 	    return 1;
-	  }
+	}
+	
+	static int anotherApproachFindMissingNumberInArray(int[] arr) {
+		int n = arr.length+1;
+		int expectedSum = (n*(n+1))/2;
+		
+		int actualSum = 0;
+		
+		for(int element : arr) {
+			actualSum += element;
+		}
+		
+		return expectedSum - actualSum;
+	}
 
 }
