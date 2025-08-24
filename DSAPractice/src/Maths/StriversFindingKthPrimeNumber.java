@@ -30,7 +30,7 @@ Output:
 15485863
  */
 
-public class FindingKthPrimeNumber {
+public class StriversFindingKthPrimeNumber {
 	
 	static int N = 86028121;
 	static boolean[] sieve = new boolean[N+1];

@@ -2,7 +2,7 @@ package Maths;
 
 import java.util.ArrayList;
 
-public class MinPrimeFactorAsN {
+public class StriversMinPrimeFactorAsN {
 	
 	static int N = 1000000;
 	static int[] sieve = new int[N+1];

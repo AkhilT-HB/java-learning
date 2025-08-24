@@ -51,7 +51,7 @@ YES
 
  */
 
-public class CodeForcesProductofThreeNumbers {
+public class StriversCodeForcesProductofThreeNumbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -2,7 +2,7 @@ package Maths;
 
 import java.util.Arrays;
 
-public class PrimeNumbersSeiveMethod {
+public class StriversPrimeNumbersSeiveMethod {
 	
 	static boolean createSieve(int n) {
 		boolean[] sieve = new boolean[n+1];
