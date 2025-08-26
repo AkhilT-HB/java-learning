@@ -4,6 +4,8 @@ public class StriversPrimeFactorsUsingSieve {
 	
 	static int N = 1000000;
 	static int[] sieve = new int[N+1];
+	
+	//Time complexity of creating sieve : O(N log(logN))
 	static void createSieve() {
 		for(int i=0;i<=N;i++) {
 			sieve[i]=i;
@@ -26,7 +28,7 @@ public class StriversPrimeFactorsUsingSieve {
 		
 		int k = 36;
 
-		
+		//Time complexity of this while loop: O(log(k))
 		while(k!=1) {
 			System.out.println(sieve[k]);
 			k=k/sieve[k];
