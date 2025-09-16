@@ -3,7 +3,6 @@ package BinarySearch;
 public class BSOnReverseSortedArray {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] arr = {20,17,15,14,13,12,10,9,8,4};
 		
 		int start = 0;
