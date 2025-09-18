@@ -1,4 +1,4 @@
-package Maths;
+package maths;
 
 /*
  * You are given one integer number n

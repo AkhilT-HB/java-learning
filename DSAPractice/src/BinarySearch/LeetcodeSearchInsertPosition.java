@@ -1,4 +1,4 @@
-package BinarySearch;
+package binarySearch;
 
 public class LeetcodeSearchInsertPosition {
 
@@ -27,7 +27,7 @@ public class LeetcodeSearchInsertPosition {
 			}
 		}
 
-		return start+1;
+		return start;
 	}
 
 }

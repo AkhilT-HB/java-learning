@@ -1,4 +1,4 @@
-package Maths;
+package maths;
 //Print all prime factors of given number N
 public class StriversPrimeFactorsSqrtNComplexity {
 

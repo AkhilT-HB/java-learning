@@ -1,4 +1,4 @@
-package ArraysPractice;
+package arraysPractice;
 
 public class BqCheck {
 
