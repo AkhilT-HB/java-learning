@@ -1,5 +1,5 @@
 package binarySearch;
-
+//REFER : https://www.geeksforgeeks.org/dsa/maximum-subarray-size-subarrays-size-sum-less-k/
 public class BruteForceMaximumSubArraySizeHavingAllSubArraysSumLessThanK {
 
 	public static void main(String[] args) {
