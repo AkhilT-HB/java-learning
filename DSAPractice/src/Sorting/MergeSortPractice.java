@@ -75,7 +75,7 @@ public class MergeSortPractice {
 		}
 		while(j<n2) {
 			arr[k]=r[j];
-			j++;
+			j++; 
 			k++;
 		}
 		
