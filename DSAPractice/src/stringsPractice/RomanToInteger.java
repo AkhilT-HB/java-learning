@@ -1,0 +1,45 @@
+package stringsPractice;
+
+import java.util.HashMap;
+
+public class RomanToInteger {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "LVIII";
+		System.out.println(romanToInt(s));
+	}
+
+	public static int romanToInt(String s) {
+		HashMap<Character, Integer> map = new HashMap<>();
+		map.put('I', 1);
+		map.put('V', 5);
+		map.put('X', 10);
+		map.put('L', 50);
+		map.put('C', 100);
+		map.put('D', 500);
+		map.put('M', 1000);
+
+		int sum = 0;
+		int i = 0;
+
+		while (i < s.length() - 1) {
+			char ch = s.charAt(i);
+			if (map.get(ch) >= map.get(s.charAt(i + 1))) {
+				sum = sum + map.get(ch);
+				i++;
+			} else {
+				sum = sum + map.get(s.charAt(i + 1));
+				sum = sum - map.get(ch);
+
+				i += 2;
+			}
+		}
+
+		if (i - 1 != s.length() - 1) {
+			sum = sum + map.get(s.charAt(i));
+		}	
+		return sum;
+	}
+
+}
