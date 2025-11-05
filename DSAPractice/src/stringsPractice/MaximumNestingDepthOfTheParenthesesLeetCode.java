@@ -1,6 +1,6 @@
 package stringsPractice;
 
-public class MaximumNestingDepthOfTheParentheses {
+public class MaximumNestingDepthOfTheParenthesesLeetCode {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
