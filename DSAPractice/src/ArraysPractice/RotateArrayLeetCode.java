@@ -15,9 +15,9 @@ public class RotateArrayLeetCode {
 	}
 	public static void rotate(int[] nums, int k) {
 		int[] subArrayB = new int[k];
-        int j = subArrayB.length-1;
-        for(int i = nums.length-1;i>=k;i++){
-            subArrayB[j--] = nums[i];
+        int j = subArrayB.length - 1;
+        for(int i = nums.length-1;i>=nums.length-k;i--){
+             subArrayB[j--] = nums[i];
         }
 
         int[] subArrayA = new int[k+1];
