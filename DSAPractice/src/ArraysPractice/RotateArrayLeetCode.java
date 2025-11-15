@@ -4,7 +4,7 @@ public class RotateArrayLeetCode {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums = {-1,-100,3,99};
+		int[] nums = {-1};
 		int k = 2;
 		
 		rotate(nums,k);
@@ -14,25 +14,24 @@ public class RotateArrayLeetCode {
 		}
 	}
 	public static void rotate(int[] nums, int k) {
-		int[] subArrayB = new int[k];
-        int j = subArrayB.length - 1;
-        for(int i = nums.length-1;i>=nums.length-k;i--){
-             subArrayB[j--] = nums[i];
-        }
+        while(k>nums.length) k = k - nums.length;
 
-        int[] subArrayA = new int[k+1];
-        for(int i = 0;i<=k;i++){
-            subArrayA[i] = nums[i];
-        }
+        reverse(nums,0,nums.length - 1);
 
-        for(int i = 0;i<k;i++){
-            nums[i] = subArrayB[i];
-        }
+        reverse(nums,0,k-1);
 
-        int start = 0;
-        for(int i = k;i<nums.length;i++){
-            nums[i] = subArrayA[start];
-            start++;
+        reverse(nums,k,nums.length-1);
+
+    }
+
+    public static void reverse(int[] nums, int start, int end){
+        
+        int j = end;
+        for(int i = start;i<j;i++){
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+            j--;
         }
     }
 }
