@@ -2,7 +2,7 @@ package arraysPractice;
 
 import java.util.Arrays;
 
-public class ReArrangeArrayArrjBecomesArriBruteForce {
+public class ReArrangeArrayArrjBecomesArriBruteForceGFG {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
