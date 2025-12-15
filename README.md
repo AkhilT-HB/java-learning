@@ -1,2 +1,2 @@
 # java-learning
-Java basics to Spring learning and practice codes
+Java basics and advanced levels learning and practice codes
