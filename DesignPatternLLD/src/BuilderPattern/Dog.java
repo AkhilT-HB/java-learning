@@ -1,4 +1,4 @@
-package BuilderPattern;
+package builderPattern;
 // Ensure the below patterns 
 // -- private fields in main class
 // -- static inner builder class
