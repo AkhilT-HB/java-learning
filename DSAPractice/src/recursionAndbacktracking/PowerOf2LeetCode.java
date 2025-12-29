@@ -4,7 +4,7 @@ public class PowerOf2LeetCode {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 12;
+		int n = 16;
 		System.out.println(isPower2(n));
 	}
 	
